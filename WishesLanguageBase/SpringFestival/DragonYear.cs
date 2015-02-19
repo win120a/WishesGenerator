@@ -23,11 +23,10 @@
 */
 
 using AC.WishesGenerator.Data.Common;
-using AC.WishesGenerator.Data.SpringFestival;
 using System;
 using System.Collections.Generic;
 
-namespace AC.WishesGenerator.Data
+namespace AC.WishesGenerator.Data.SpringFestival
 {
     public class DragonYear : AbstractSpringFestivalLanguage
     {

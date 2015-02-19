@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="AbstractLanguage.cs" />
     <Compile Include="Common\CommonLanguage.cs" />
-    <Compile Include="DragonYear.cs" />
+    <Compile Include="SpringFestival\DragonYear.cs" />
     <Compile Include="NewYearsDay\NewYearsDayLanguage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SentenseMaker.cs" />
