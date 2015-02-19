@@ -58,7 +58,7 @@ namespace AC.WishesGenerator.Data
             }
             else if (al is NewYearsDayLanguage)
             {
-                mess = al.ConstructLanguage(3);
+                mess = al.ConstructLanguage(3).Replace("XXX", who);
                 return mess;
             }
             return null;

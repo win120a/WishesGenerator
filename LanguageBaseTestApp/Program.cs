@@ -59,6 +59,12 @@ namespace LanguageBaseTestApp
             Console.WriteLine("======== SM-DY ===========");
             Console.WriteLine(SentenseMaker.MakeSentense("Test", new DragonYear()));
 
+            Console.WriteLine("======== SM-DY ===========");
+            Console.WriteLine(SentenseMaker.MakeSentense("Test", new PigYear()));
+
+            Console.WriteLine("======== SM-NL ===========");
+            Console.WriteLine(SentenseMaker.MakeSentense("Test", nl));
+
             Console.ReadLine();
         }
     }
