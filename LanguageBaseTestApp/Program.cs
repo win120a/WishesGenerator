@@ -65,6 +65,9 @@ namespace LanguageBaseTestApp
             Console.WriteLine("======== SM-NL ===========");
             Console.WriteLine(SentenseMaker.MakeSentense("Test", nl));
 
+            Console.WriteLine("======== SM-CL ===========");
+            Console.WriteLine(SentenseMaker.MakeSentense("Test", cl));
+
             Console.ReadLine();
         }
     }

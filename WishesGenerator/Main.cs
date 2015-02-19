@@ -34,11 +34,28 @@ using System.Windows.Forms;
 
 namespace WishesGenerator
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
+        }
+
+        private void ok_Click(object sender, EventArgs e)
+        {
+            if (name.Text.Equals("") || type.Text.Equals(""))
+            {
+                MessageBox.Show("请填完所有的空");
+            }
+            switch (name.Text)
+            {
+                
+            }
+        }
+
+        private void quit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
