@@ -22,6 +22,8 @@
   SOFTWARE.
 */
 
+using AC.WishesGenerator.Data;
+using AC.WishesGenerator.Data.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,9 +49,11 @@ namespace WishesGenerator
             {
                 MessageBox.Show("请填完所有的空");
             }
-            switch (name.Text)
+            switch (type.Text)
             {
-                
+                case "通用句式":
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new CommonLanguage());
+                    break;
             }
         }
 

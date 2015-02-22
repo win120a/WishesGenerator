@@ -28,17 +28,12 @@ using System.Collections.Generic;
 
 namespace AC.WishesGenerator.Data.SpringFestival
 {
-    public class PendingLanguage : AbstractSpringFestivalLanguage
+    public abstract class PendingLanguage : AbstractSpringFestivalLanguage
     {
         public PendingLanguage()
         {
             data = new List<string>();
             Generator = new PendingLanguageGenerator();
-        }
-
-        public override string GetYearName()
-        {
-            return null;
         }
 
         protected override void InitData()

@@ -43,12 +43,12 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(438, 232);
+            this.textBox1.Size = new System.Drawing.Size(438, 109);
             this.textBox1.TabIndex = 0;
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(71, 253);
+            this.name.Location = new System.Drawing.Point(71, 127);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(379, 21);
             this.name.TabIndex = 1;
@@ -56,7 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 256);
+            this.label1.Location = new System.Drawing.Point(12, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 2;
@@ -64,7 +64,7 @@
             // 
             // ok
             // 
-            this.ok.Location = new System.Drawing.Point(12, 306);
+            this.ok.Location = new System.Drawing.Point(14, 180);
             this.ok.Name = "ok";
             this.ok.Size = new System.Drawing.Size(82, 27);
             this.ok.TabIndex = 3;
@@ -74,7 +74,8 @@
             // 
             // quit
             // 
-            this.quit.Location = new System.Drawing.Point(368, 306);
+            this.quit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.quit.Location = new System.Drawing.Point(368, 180);
             this.quit.Name = "quit";
             this.quit.Size = new System.Drawing.Size(82, 27);
             this.quit.TabIndex = 4;
@@ -84,6 +85,7 @@
             // 
             // type
             // 
+            this.type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.type.FormattingEnabled = true;
             this.type.Items.AddRange(new object[] {
             "通用句式",
@@ -100,7 +102,7 @@
             "鸡年",
             "狗年",
             "猪年"});
-            this.type.Location = new System.Drawing.Point(71, 280);
+            this.type.Location = new System.Drawing.Point(71, 154);
             this.type.Name = "type";
             this.type.Size = new System.Drawing.Size(379, 20);
             this.type.TabIndex = 5;
@@ -108,19 +110,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 283);
+            this.label2.Location = new System.Drawing.Point(0, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 6;
             this.label2.Text = "请选择类型";
             // 
-            // Form1
+            // Main
             // 
             this.AcceptButton = this.ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.quit;
-            this.ClientSize = new System.Drawing.Size(462, 342);
+            this.ClientSize = new System.Drawing.Size(462, 215);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.type);
             this.Controls.Add(this.quit);
@@ -129,7 +131,7 @@
             this.Controls.Add(this.name);
             this.Controls.Add(this.textBox1);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Wishes Generator";
             this.ResumeLayout(false);
             this.PerformLayout();
