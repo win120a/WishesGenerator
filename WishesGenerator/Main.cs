@@ -27,13 +27,6 @@ using AC.WishesGenerator.Data.Common;
 using AC.WishesGenerator.Data.NewYearsDay;
 using AC.WishesGenerator.Data.SpringFestival;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WishesGenerator
@@ -71,6 +64,16 @@ namespace WishesGenerator
                 case "牛年":
                     textBox1.Text = "";
                     textBox1.Text = SentenseMaker.MakeSentense(name.Text, new CowYear());
+                    break;
+
+                case "虎年":
+                    textBox1.Text = "";
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new TigerYear());
+                    break;
+
+                case "兔年":
+                    textBox1.Text = "";
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new RabbitYear());
                     break;
             }
         }

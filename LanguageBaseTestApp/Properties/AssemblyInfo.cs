@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("LanguageBaseTestApp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Wishes Language Base test application")]
+[assembly: AssemblyDescription("Tests language base file.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("LanguageBaseTestApp")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2015")]
+[assembly: AssemblyCompany("Andy Cheung")]
+[assembly: AssemblyProduct("Wishes Generator")]
+[assembly: AssemblyCopyright("Copyright © 2011-2015 Andy Cheung")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
