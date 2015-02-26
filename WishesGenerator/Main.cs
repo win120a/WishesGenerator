@@ -75,6 +75,16 @@ namespace WishesGenerator
                     textBox1.Text = "";
                     textBox1.Text = SentenseMaker.MakeSentense(name.Text, new RabbitYear());
                     break;
+
+                case "龙年":
+                    textBox1.Text = "";
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new DragonYear());
+                    break;
+
+                case "蛇年":
+                    textBox1.Text = "";
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new SnakeYear());
+                    break;
             }
         }
 
