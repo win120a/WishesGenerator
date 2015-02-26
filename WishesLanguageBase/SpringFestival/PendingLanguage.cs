@@ -89,7 +89,7 @@ namespace AC.WishesGenerator.Data.SpringFestival
         }
     }
 
-    public class ChikenYear : PendingLanguage
+    public class ChickenYear : PendingLanguage
     {
         public override string GetYearName()
         {
