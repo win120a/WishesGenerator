@@ -43,6 +43,7 @@ namespace WishesGenerator
             if (name.Text.Equals("") || type.Text.Equals(""))
             {
                 MessageBox.Show("请填完所有的空");
+                return;
             }
             switch (type.Text)
             {
@@ -121,6 +122,11 @@ namespace WishesGenerator
         private void quit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void about_Click(object sender, EventArgs e)
+        {
+            new AboutBox().ShowDialog();
         }
     }
 }

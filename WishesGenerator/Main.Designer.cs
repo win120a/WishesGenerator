@@ -35,6 +35,7 @@
             this.quit = new System.Windows.Forms.Button();
             this.type = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.about = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -116,6 +117,17 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "请选择类型";
             // 
+            // about
+            // 
+            this.about.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.about.Location = new System.Drawing.Point(191, 180);
+            this.about.Name = "about";
+            this.about.Size = new System.Drawing.Size(82, 27);
+            this.about.TabIndex = 7;
+            this.about.Text = "关于";
+            this.about.UseVisualStyleBackColor = true;
+            this.about.Click += new System.EventHandler(this.about_Click);
+            // 
             // Main
             // 
             this.AcceptButton = this.ok;
@@ -123,6 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.quit;
             this.ClientSize = new System.Drawing.Size(462, 215);
+            this.Controls.Add(this.about);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.type);
             this.Controls.Add(this.quit);
@@ -147,6 +160,7 @@
         private System.Windows.Forms.Button quit;
         private System.Windows.Forms.ComboBox type;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button about;
     }
 }
 
