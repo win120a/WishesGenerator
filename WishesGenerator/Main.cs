@@ -24,6 +24,8 @@
 
 using AC.WishesGenerator.Data;
 using AC.WishesGenerator.Data.Common;
+using AC.WishesGenerator.Data.NewYearsDay;
+using AC.WishesGenerator.Data.SpringFestival;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,7 +54,23 @@ namespace WishesGenerator
             switch (type.Text)
             {
                 case "通用句式":
+                    textBox1.Text = "";
                     textBox1.Text = SentenseMaker.MakeSentense(name.Text, new CommonLanguage());
+                    break;
+
+                case "通用句式（不带年份）":
+                    textBox1.Text = "";
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new NewYearsDayLanguage());
+                    break;
+
+                case "鼠年":
+                    textBox1.Text = "";
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new MouseYear());
+                    break;
+
+                case "牛年":
+                    textBox1.Text = "";
+                    textBox1.Text = SentenseMaker.MakeSentense(name.Text, new CowYear());
                     break;
             }
         }

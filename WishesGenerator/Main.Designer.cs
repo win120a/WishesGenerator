@@ -89,7 +89,7 @@
             this.type.FormattingEnabled = true;
             this.type.Items.AddRange(new object[] {
             "通用句式",
-            "带年份句式",
+            "通用句式（不带年份）",
             "鼠年",
             "牛年",
             "虎年",

@@ -81,6 +81,7 @@ namespace AC.WishesGenerator.Data
                     {
                         if (tPos >= (Data.Count - 1))
                         {
+                            tPos = 0;
                             goto loopTag;
                         }
                         tPos += 1;
