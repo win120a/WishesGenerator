@@ -18,8 +18,6 @@ namespace WishesGenerator
             this.labelVersion.Text = String.Format("版本 {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = "    Licensed by the MIT License (MIT).\n\n" +
-                                           "    Copyright (c) 2011-2015 Andy Cheung";
         }
 
         #region 程序集特性访问器
@@ -101,5 +99,6 @@ namespace WishesGenerator
             }
         }
         #endregion
+
     }
 }
